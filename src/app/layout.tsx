@@ -1,3 +1,4 @@
+import Footer from "@/Components/footer";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -27,7 +28,19 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col relative bg-black">
+        {/* Global Sticky Background Logo */}
+        <div className="fixed inset-0 pointer-events-none -z-10 flex items-center justify-center overflow-hidden">
+          <img
+            src="/One-8-commune-logo-transparent.png"
+            alt=""
+            aria-hidden="true"
+            className="w-[1250px] max-w-none opacity-[0.04] mt-24" // Added mt-24 or positioned appropriately. Using absolute positioning similar to before.
+          />
+        </div>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
