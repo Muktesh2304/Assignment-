@@ -3,7 +3,7 @@ import { menuPages } from "@/data/menuData";
 
 export const metadata = {
   title: "Premium Desserts & Sweet Treats Menu",
-  description: "End your dining experience on a sweet note with One8 Commune's irresistible desserts — elegant creations crafted to delight every palate.",
+  description: "End your dining experience on a sweet note with One8 Commune's ",
 };
 
 export default function Page() {

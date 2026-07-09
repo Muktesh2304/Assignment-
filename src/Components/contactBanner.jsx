@@ -47,9 +47,6 @@ export default function ContactBanner() {
 
       </div>
 
-      
-      
-
     </section>
   );
 }

@@ -95,7 +95,7 @@ export default function MenuPage({ menu, showBreadcrumb = true }) {
         >
           <Image
             src="/One-8-commune-logo-transparent.png"
-            alt=""
+            alt="logo"
             width={900}
             height={380}
             aria-hidden="true"

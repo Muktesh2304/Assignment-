@@ -9,7 +9,7 @@ import Gallery from "@/Components/gallery";
 
 export const metadata = {
   title: "One8 Commune | Premium Fine Dining Restaurant & Lounge",
-  description: "Experience premium culinary artistry, handpicked drinks, and an elegant ambiance at One8 Commune in Aerocity, New Delhi. Perfect for family dinners and social celebrations.",
+  description: "Experience premium culinary artistry, handpicked drinks, and an elegant ambiance . Perfect for family dinners and social celebrations.",
 };
 
 export default function Page() {
@@ -21,7 +21,6 @@ export default function Page() {
       <Aboutus />
       <HomeMenu />
       <ServicesOccasion />
-
       <Gallery />
     </>
   );

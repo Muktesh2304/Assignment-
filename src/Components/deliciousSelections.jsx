@@ -3,6 +3,7 @@ import Image from "next/image";
 const menuItems = [
   {
     title: "Appetizers",
+    alt: "Appetizers",
     description:
       "Small bites, big flavors — the perfect beginning to your dining experience.",
     image:
@@ -11,6 +12,7 @@ const menuItems = [
   },
   {
     title: "Main Dishes",
+    alt: "Main Dishes",
     description:
       "Bold flavors and masterful creations for a truly unforgettable main course.",
     image:
@@ -19,6 +21,7 @@ const menuItems = [
   },
   {
     title: "Desserts",
+    alt: "Desserts",
     description:
       "End your meal on a sweet note with irresistible dessert creations.",
     image:

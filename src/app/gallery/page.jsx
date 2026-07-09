@@ -5,7 +5,7 @@ import Gallery from "@/Components/gallery";
 
 export const metadata = {
   title: "Photo Gallery & Ambience - Fine Dining",
-  description: "Browse images of One8 Commune's premium dishes, custom cocktails, elegant interiors, and memorable events in Aerocity, New Delhi.",
+  description: "Images of One8 Commune's premium dishes, custom cocktails, elegant interiors, and memorable events in Aerocity, New Delhi.",
 };
 
 export default function GalleryPage() {
@@ -13,15 +13,8 @@ export default function GalleryPage() {
     <>
       
       <Navbar />
-
-      
       <GalleryBanner />
-
-      
       <Gallery />
-
-      
-
     </>
   );
 }

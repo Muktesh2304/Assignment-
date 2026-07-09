@@ -1,10 +1,6 @@
 import Navbar from "@/Components/navbar";
 
-export default function MenuLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function MenuLayout({ children }) {
   return (
     <>
       <Navbar />

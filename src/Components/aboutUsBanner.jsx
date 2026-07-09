@@ -25,7 +25,7 @@ export default function OurStoryBanner() {
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
 
         <h1 className="font-serif text-5xl text-white md:text-7xl">
-          Our Story
+          About Us
         </h1>
 
         <p className="mt-5 max-w-2xl text-lg text-white/90 md:text-xl">
