@@ -64,7 +64,7 @@ export default function Navbar() {
       <nav className="flex min-h-16 items-center justify-between px-5 py-2 sm:px-8 lg:min-h-[70px] lg:px-10 xl:px-16">
         <a href="#" className="shrink-0" aria-label="Tastyc home">
           <Image
-            src="/One-8-commune-logo-transparent.png"
+            src="/logo.png"
             alt="One8 Commune"
             width={240}
             height={100}

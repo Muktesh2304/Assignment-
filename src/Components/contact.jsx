@@ -75,8 +75,6 @@ export default function Contact() {
                 className="h-auto w-full object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
-
-            
             <div className="text-center">
               <p className="mb-8 flex items-center justify-center gap-3 text-xs font-bold uppercase tracking-[0.4em] text-amber-400">
                 <span>✦</span> Visit Us <span>✦</span>

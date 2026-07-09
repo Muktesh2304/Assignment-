@@ -67,14 +67,14 @@ export default function OurStory() {
             <span className="mx-3">&#10022;</span>
           </p>
 
-          <h2 className="[font-family:Georgia,serif] text-4xl font-normal leading-tight text-white sm:text-5xl lg:text-6xl">
+          <h2 className="font-[Georgia,serif] text-4xl font-normal leading-tight text-white sm:text-5xl lg:text-6xl">
             Enjoy Every Moment with Tasty
             <br />
             <InlineImage src={highlightImages.breakfast} alt="Tasty breakfast" />
             <span className="text-[#eab65b]">Breakfast,</span> Hearty
             <InlineImage src={highlightImages.mains} alt="Heavy main dishes" />
             <br />
-            Mains &amp;
+            Mains
             <InlineImage src={highlightImages.drinks} alt="Drinks" />
             <span className="text-[#eab65b]">Drinks</span>
           </h2>

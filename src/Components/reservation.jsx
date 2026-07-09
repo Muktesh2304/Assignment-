@@ -84,6 +84,7 @@ export default function Reservation() {
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setReservations(JSON.parse(stored));
     } else {
       localStorage.setItem(STORAGE_KEY, JSON.stringify([]));
@@ -220,7 +221,7 @@ export default function Reservation() {
           }}
         >
           <Image
-            src="/One-8-commune-logo-transparent.png"
+            src="/logo.png"
             alt=""
             width={900}
             height={380}
@@ -456,7 +457,7 @@ export default function Reservation() {
                               onClick={() => setStep(4)}
                               className="flex-1 bg-[#eab65b] py-3 text-xs font-bold uppercase tracking-[0.18em] text-black transition-all hover:bg-white disabled:cursor-not-allowed disabled:opacity-30"
                             >
-                              Details &amp; Book →
+                              Details Book →
                             </button>
                           </div>
                         </>

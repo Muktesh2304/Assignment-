@@ -30,7 +30,7 @@ export const metadata = {
   },
   openGraph: {
     title: "One8 Commune | Premium Fine Dining Restaurant & Lounge",
-    description: "Experience premium culinary artistry and a vibrant fine dining experience at One8 Commune.",
+    description: "Experience premium culinary artistry and a vibrant fine dining experience at One8 Commune. ",
     url: "https://one8commune.com",
     siteName: "One8 Commune",
     images: [
@@ -84,6 +84,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
+        <link rel="icon" href="/icon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -93,7 +94,7 @@ export default function RootLayout({ children }) {
       
         <div className="fixed inset-0 pointer-events-none -z-10 flex items-center justify-center overflow-hidden">
           <Image
-            src="/One-8-commune-logo-transparent.png"
+            src="/logo.png"
             alt="One8 Commune Background Watermark Logo"
             aria-hidden="true"
             width={1250}

@@ -56,18 +56,8 @@ export default function OurStoryBanner() {
 
       </div>
 
-      
-
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-
-        <div className="flex h-10 w-6 justify-center rounded-full border border-white/60">
-
-          <div className="mt-2 h-2 w-1 rounded-full bg-amber-400 animate-bounce" />
-
-        </div>
-
-      </div>
-
     </section>
+
   );
+  
 }

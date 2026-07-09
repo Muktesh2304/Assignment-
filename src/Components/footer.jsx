@@ -27,7 +27,7 @@ export default function Footer() {
 
       
       <Image
-        src="/One-8-commune-logo-transparent.png"
+        src="/logo.png"
         alt="One8 Commune watermark"
         width={1200}
         height={500}
@@ -54,7 +54,7 @@ export default function Footer() {
           <div className="text-center">
 
             <Image
-              src="/One-8-commune-logo-transparent.png"
+              src="/logo.png"
               alt="One8 Commune"
               width={280}
               height={80}
