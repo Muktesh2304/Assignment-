@@ -6,7 +6,7 @@ export default function OurStoryBanner() {
   return (
     <section className="relative h-[50vh] min-h-[380px] w-full overflow-hidden">
 
-      {/* Background Image */}
+      
       <Image
         src="https://images.pexels.com/photos/5773962/pexels-photo-5773962.jpeg"
         alt="One8 Commune"
@@ -15,13 +15,13 @@ export default function OurStoryBanner() {
         className="object-cover"
       />
 
-      {/* Dark Overlay */}
+      
       <div className="absolute inset-0 bg-black/55" />
 
-      {/* Decorative Top Line */}
+      
       <div className="absolute left-1/2 top-10 h-1 w-20 -translate-x-1/2 rounded-full bg-amber-500" />
 
-      {/* Content */}
+      
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
 
         <h1 className="font-serif text-5xl text-white md:text-7xl">
@@ -33,7 +33,7 @@ export default function OurStoryBanner() {
           <span className="text-amber-400"> One8 Commune.</span>
         </p>
 
-        {/* Breadcrumb */}
+        
         <div className="mt-10 flex items-center gap-2 text-sm">
 
           <Link
@@ -56,7 +56,7 @@ export default function OurStoryBanner() {
 
       </div>
 
-      {/* Bottom Mouse Indicator */}
+      
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
 

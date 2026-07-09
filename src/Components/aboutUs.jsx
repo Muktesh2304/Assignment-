@@ -139,15 +139,7 @@ export default function OurStory() {
               />
             </div>
 
-            {/* <div className="absolute -bottom-24 -left-12 hidden h-48 w-48 overflow-hidden rounded-full border border-[#eab65b]/50 bg-white/5 shadow-2xl sm:block">
-              <Image
-                src={highlightImages.mains}
-                alt="Heavy main dishes"
-                fill
-                sizes="200px"
-                className="object-cover"
-              />
-            </div> */}
+            
           </div>
         </div>
       </div>

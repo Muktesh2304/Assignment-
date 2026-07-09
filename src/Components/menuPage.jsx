@@ -6,9 +6,9 @@ import { menuNavItems } from "@/data/menuData";
 export default function MenuPage({ menu, showBreadcrumb = true }) {
   return (
     <>
-      {/* Banner */}
+      
       <section className="relative h-[50vh] min-h-[380px] w-full overflow-hidden">
-        {/* Background Image */}
+        
         <Image
           src={menu.heroImage}
           alt={menu.title}
@@ -17,13 +17,13 @@ export default function MenuPage({ menu, showBreadcrumb = true }) {
           className="object-cover object-center"
         />
 
-        {/* Dark Overlay */}
+        
         <div className="absolute inset-0 bg-black/60" />
 
-        {/* Decorative Top Line */}
+        
         <div className="absolute left-1/2 top-10 h-1 w-20 -translate-x-1/2 rounded-full bg-amber-500" />
 
-        {/* Content */}
+        
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
           <h1 className="font-serif text-5xl text-white md:text-7xl">
             {menu.title}
@@ -34,7 +34,7 @@ export default function MenuPage({ menu, showBreadcrumb = true }) {
             <span className="text-amber-400">delights</span>
           </p>
 
-          {/* Breadcrumb */}
+          
           {showBreadcrumb ? (
             <div className="mt-8 flex items-center gap-2 text-sm text-white/90">
               <Link
@@ -56,12 +56,8 @@ export default function MenuPage({ menu, showBreadcrumb = true }) {
           ) : null}
         </div>
 
-        {/* Bottom Mouse Indicator */}
-        {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-          <div className="flex h-10 w-6 justify-center rounded-full border border-white/60">
-            <div className="mt-2 h-2 w-1 animate-bounce rounded-full bg-amber-400" />
-          </div>
-        </div> */}
+        
+        
       </section>
 
       <main className="relative min-h-screen overflow-hidden bg-transparent px-5 pb-16 pt-12 text-white sm:px-8 lg:px-16">
@@ -123,8 +119,8 @@ export default function MenuPage({ menu, showBreadcrumb = true }) {
                       <Image
                         src={item.image}
                         alt={item.name}
-                        fill
-                        sizes="72px"
+                        width={72}
+                        height={72}
                         className="object-cover transition-transform duration-500 hover:scale-110"
                       />
                     </div>

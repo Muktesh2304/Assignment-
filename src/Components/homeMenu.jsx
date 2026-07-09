@@ -19,9 +19,9 @@ export default function HomeMenu() {
             Special Fine Dine
             <span className="mx-3">&#10022;</span>
           </p>
-          <h1 className="[font-family:Georgia,serif] text-4xl font-normal leading-tight sm:text-5xl lg:text-6xl">
+          <h2 className="[font-family:Georgia,serif] text-4xl font-normal leading-tight sm:text-5xl lg:text-6xl">
             Delicious Menu
-          </h1>
+          </h2>
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-5 text-xs font-bold uppercase tracking-[0.22em] sm:gap-7">
@@ -83,8 +83,8 @@ export default function HomeMenu() {
                       <Image
                         src={item.image}
                         alt={item.name}
-                        fill
-                        sizes="72px"
+                        width={72}
+                        height={72}
                         className="object-cover transition-transform duration-500 hover:scale-110"
                       />
                     </div>

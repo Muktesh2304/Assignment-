@@ -52,7 +52,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) return;
-    // Simulate send
+    
     setSent(true);
     setForm({ name: "", email: "", phone: "", subject: "", message: "" });
   };
@@ -63,9 +63,9 @@ export default function Contact() {
 
         <div className="grid items-start gap-14 lg:grid-cols-2 lg:gap-20">
 
-          {/* ── Left: Image + Info ── */}
+          
           <div>
-            {/* Arched restaurant image */}
+            
             <div className="relative mx-auto mb-10 w-full max-w-[360px] overflow-hidden rounded-t-[999px] border border-amber-500/60 shadow-2xl shadow-amber-900/20">
               <Image
                 src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg"
@@ -76,7 +76,7 @@ export default function Contact() {
               />
             </div>
 
-            {/* Visit Us */}
+            
             <div className="text-center">
               <p className="mb-8 flex items-center justify-center gap-3 text-xs font-bold uppercase tracking-[0.4em] text-amber-400">
                 <span>✦</span> Visit Us <span>✦</span>
@@ -104,7 +104,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* ── Right: Form ── */}
+          
           <div>
             <p className="mb-4 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.4em] text-amber-400">
               <span>✦</span> Write To Us <span>✦</span>
@@ -132,7 +132,7 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="grid gap-4 sm:grid-cols-2">
-                {/* Name */}
+                
                 <div>
                   <input
                     type="text"
@@ -144,7 +144,7 @@ export default function Contact() {
                   />
                 </div>
 
-                {/* Email */}
+                
                 <div>
                   <input
                     type="email"
@@ -156,7 +156,7 @@ export default function Contact() {
                   />
                 </div>
 
-                {/* Phone */}
+                
                 <div>
                   <input
                     type="tel"
@@ -167,7 +167,7 @@ export default function Contact() {
                   />
                 </div>
 
-                {/* Subject */}
+                
                 <div>
                   <input
                     type="text"
@@ -178,7 +178,7 @@ export default function Contact() {
                   />
                 </div>
 
-                {/* Message */}
+                
                 <div className="sm:col-span-2">
                   <textarea
                     rows={5}
@@ -190,7 +190,7 @@ export default function Contact() {
                   />
                 </div>
 
-                {/* Submit */}
+                
                 <div className="sm:col-span-2">
                   <button
                     type="submit"
@@ -202,7 +202,7 @@ export default function Contact() {
               </form>
             )}
 
-            {/* Quick contact row */}
+            
             <div className="mt-8 flex flex-wrap gap-6 border-t border-white/10 pt-8 text-sm text-white/50">
               <span className="flex items-center gap-2">
                 <FaPhone size={14} className="text-amber-400" />

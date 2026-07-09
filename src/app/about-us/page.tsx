@@ -4,8 +4,8 @@ import AboutUs from "@/Components/aboutUs";
 
 
 export const metadata = {
-  title: "About Us | One8 Commune",
-  description: "Learn about One8 Commune — our story, our passion, and our team.",
+  title: "Our Story & Vision - Premium Restaurant",
+  description: "Discover the story behind One8 Commune — a premium restaurant in Aerocity, New Delhi. Learn about our vision, values, and the culinary passion that drives every dish we serve.",
 };
 
 export default function AboutUsPage() {

@@ -26,19 +26,19 @@ const navItems = [
       { label: "Drinks", href: "/menu/drinks" },
     ],
   },
-  // {
-  //   label: "ORDER",
-  //   hasMenu: true,
-  //   items: [
-  //     "Reservation (Booking Calendar)",
-  //     "Reservation (MetForm)",
-  //     "Reservation (OpenTable)",
-  //     "Reservation Popup",
-  //   ],
-  // },
-  // { label: "BLOG" },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   { label: "CONTACT", href: "/contact" },
-  // { label: "SHOP", hasMenu: true, items: ["Shop", "Cart", "Checkout"] },
+  
 ];
 
 function Chevron() {

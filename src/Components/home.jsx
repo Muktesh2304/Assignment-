@@ -42,41 +42,23 @@ export default function Home() {
 
       <section className="absolute inset-0 z-10 flex items-center justify-center px-5 pt-20 text-center">
         <div className="max-w-6xl">
-          {videos[currentVideo].words.map((line) => (
-            <h1
-              key={line}
-              className="[font-family:Georgia,serif] text-5xl font-normal uppercase leading-[0.9] tracking-[0.08em] text-white drop-shadow-2xl sm:text-7xl md:text-8xl lg:text-[8.5rem]"
-            >
-              {line}
-            </h1>
-          ))}
+          <h1 className="[font-family:Georgia,serif] text-5xl font-normal uppercase leading-[0.9] tracking-[0.08em] text-white drop-shadow-2xl sm:text-7xl md:text-8xl lg:text-[8.5rem]">
+            {videos[currentVideo].words.map((line) => (
+              <span
+                key={line}
+                className="block"
+              >
+                {line}
+              </span>
+            ))}
+          </h1>
           <p className="-mt-1 [font-family:Brush_Script_MT,cursive] text-5xl font-normal italic leading-none text-white drop-shadow-2xl sm:-mt-3 sm:text-7xl md:text-8xl lg:-mt-5 lg:text-[8rem]">
             {videos[currentVideo].accent}
           </p>
         </div>
       </section>
 
-      {/* <button
-        type="button"
-        onClick={showNextVideo}
-        aria-label="Switch to next video"
-        className="absolute right-5 top-1/2 z-20 grid h-12 w-12 -translate-y-1/2 place-items-center border border-white/35 bg-black/35 text-white backdrop-blur transition-colors hover:bg-[#eab65b] hover:text-black sm:right-8 sm:h-14 sm:w-14"
-      >
-        <svg
-          aria-hidden="true"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="m15 18-6-6 6-6"
-          />
-        </svg>
-      </button> */}
+      
 
       <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 gap-2">
         {videos.map((video, index) => (

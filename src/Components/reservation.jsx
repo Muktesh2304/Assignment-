@@ -175,7 +175,7 @@ export default function Reservation() {
       <div className="absolute inset-0 bg-black/75" />
 
       <div className="relative z-10 mx-auto max-w-5xl">
-        {/* Header */}
+        
         <div className="text-center mb-12">
           <p className="mb-5 text-xs font-bold uppercase tracking-[0.4em] text-[#eab65b]">
             <span className="mx-3">&#10022;</span>
@@ -190,7 +190,7 @@ export default function Reservation() {
           </p>
         </div>
 
-        {/* Tab Controls */}
+        
         <div className="mb-8 flex flex-wrap justify-center gap-2">
           {["book", "history"].map((tab) => (
             <button
@@ -228,7 +228,7 @@ export default function Reservation() {
             className="pointer-events-none absolute right-4 top-1/2 w-[500px] max-w-none -translate-y-1/2 opacity-[0.03]"
           />
 
-          {/* ════════════════ BOOK A TABLE ════════════════ */}
+          
           {activeTab === "book" && (
             <div className="relative z-10">
               {bookingSuccess ? (
@@ -273,7 +273,7 @@ export default function Reservation() {
                 <>
                   <StepIndicator current={step} />
 
-                  {/* Step 1: Date & Guests */}
+                  
                   {step === 1 && (
                     <div className="mx-auto max-w-md">
                       <div className="mb-6">
@@ -321,7 +321,7 @@ export default function Reservation() {
                     </div>
                   )}
 
-                  {/* Step 2: Time Slots */}
+                  
                   {step === 2 && (
                     <div>
                       <p className="mb-5 text-center text-xs text-white/50">
@@ -382,7 +382,7 @@ export default function Reservation() {
                     </div>
                   )}
 
-                  {/* Step 3: Available Tables */}
+                  
                   {step === 3 && (
                     <div>
                       <p className="mb-5 text-center text-xs text-white/50">
@@ -464,7 +464,7 @@ export default function Reservation() {
                     </div>
                   )}
 
-                  {/* Step 4: Personal Details */}
+                  
                   {step === 4 && (
                     <div className="mx-auto max-w-xl">
                       <div className="mb-5 border border-amber-500/20 bg-amber-500/5 p-4 text-xs">
@@ -555,10 +555,10 @@ export default function Reservation() {
             </div>
           )}
 
-          {/* ════════════════ RESERVATION HISTORY ════════════════ */}
+          
           {activeTab === "history" && (
             <div className="relative z-10 text-left">
-              {/* Search */}
+              
               <div className="relative mb-6">
                 <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/30 text-xs">🔍</span>
                 <input
@@ -570,7 +570,7 @@ export default function Reservation() {
                 />
               </div>
 
-              {/* Stats */}
+              
               {hydrated && (
                 <div className="mb-6 grid grid-cols-3 gap-2 text-center text-xs">
                   {[
@@ -586,7 +586,7 @@ export default function Reservation() {
                 </div>
               )}
 
-              {/* History list */}
+              
               {!hydrated ? (
                 <div className="py-10 text-center text-xs text-white/30">Loading...</div>
               ) : filtered.length === 0 ? (
@@ -667,7 +667,7 @@ export default function Reservation() {
           )}
         </div>
 
-        {/* Bottom Contacts Grid */}
+        
         <div className="mt-8 grid gap-4 text-center sm:grid-cols-3">
           <div className="border border-white/10 bg-white/5 px-5 py-5 backdrop-blur">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#eab65b]">Call Us</p>

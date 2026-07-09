@@ -4,12 +4,17 @@ import Footer from "@/Components/footer";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Meet Our Master Chefs & Culinary Team",
+  description: "Meet the master culinary team at One8 Commune. Led by Head Chef Lorenzo Oliver, our chefs craft unforgettable dining experiences with flawlessness and artistry.",
+};
+
 export default function OurChefPage() {
   return (
     <main className="min-h-screen text-white pt-24 overflow-hidden">
       <Navbar />
       
-      {/* Banner Section */}
+      
       <section className="relative h-[50vh] min-h-[380px] flex flex-col items-center justify-center text-center px-4 mt-[-6rem]">
         <div className="absolute inset-0 -z-10">
           <Image
@@ -30,7 +35,7 @@ export default function OurChefPage() {
         </div>
       </section>
 
-      {/* Meet the Chef Section */}
+      
       <section className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-16 py-24">
         <div className="text-center mb-16">
           <div className="text-[#eab65b] text-sm font-bold tracking-[0.2em] mb-4 flex items-center justify-center gap-2">
@@ -43,7 +48,7 @@ export default function OurChefPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mt-12 relative max-w-6xl mx-auto">
           
-          {/* Left Column - Text and Small Image */}
+          
           <div className="flex flex-col h-full">
             <div className="mb-12">
               <h3 className="text-lg font-bold tracking-[0.2em] mb-2 uppercase">HEAD CHEF</h3>
@@ -72,10 +77,10 @@ export default function OurChefPage() {
             </div>
           </div>
 
-          {/* Right Column - Large Arched Image */}
+          
           <div className="relative w-full flex justify-center lg:justify-end">
             <div className="relative w-full max-w-[480px] aspect-[3/4]">
-              {/* Gold border decorative element */}
+              
               <div className="absolute inset-0 border border-[#eab65b] rounded-t-[300px] translate-x-6 translate-y-6 -z-10"></div>
               
               <Image
@@ -91,7 +96,7 @@ export default function OurChefPage() {
         </div>
       </section>
 
-      {/* Meet Our Team Section */}
+      
       <section id="our-team" className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-16 py-24 border-t border-white/10">
         <div className="text-center mb-16">
           <div className="text-[#eab65b] text-sm font-bold tracking-[0.2em] mb-4 flex items-center justify-center gap-2">
@@ -104,7 +109,7 @@ export default function OurChefPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center">
           
-          {/* Team Member 1 */}
+          
           <div className="flex flex-col items-center">
             <div className="relative w-full max-w-[320px] aspect-[3/4] mb-8 overflow-hidden rounded-t-full">
               <Image
@@ -121,7 +126,7 @@ export default function OurChefPage() {
             </p>
           </div>
 
-          {/* Team Member 2 */}
+          
           <div className="flex flex-col items-center">
             <div className="relative w-full max-w-[320px] aspect-[3/4] mb-8 overflow-hidden rounded-t-full">
               <Image
@@ -138,7 +143,7 @@ export default function OurChefPage() {
             </p>
           </div>
 
-          {/* Team Member 3 */}
+          
           <div className="flex flex-col items-center">
             <div className="relative w-full max-w-[320px] aspect-[3/4] mb-8 overflow-hidden rounded-t-full">
               <Image
@@ -159,7 +164,7 @@ export default function OurChefPage() {
       </section>
 
 
-      {/* <Footer /> */}
+      
     </main>
   );
 }

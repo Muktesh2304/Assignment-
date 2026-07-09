@@ -2,8 +2,8 @@ import Navbar from "@/Components/navbar";
 import Reservation from "@/Components/reservation";
 
 export const metadata = {
-  title: "Book a Table | One8 Commune",
-  description: "Secure your table at One8 Commune with real-time available tables and instant reservations.",
+  title: "Reserve a Table Online - Fine Dining",
+  description: "Reserve your table at One8 Commune, Aerocity, New Delhi. Choose your date, time and party size for a premium fine dining experience with instant booking confirmation.",
 };
 
 export default function BookingPage() {

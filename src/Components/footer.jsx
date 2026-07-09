@@ -13,22 +13,22 @@ import {
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden text-white">
-      {/* Background */}
+      
       <Image
         src="https://images.pexels.com/photos/27626762/pexels-photo-27626762.png?auto=compress&cs=tinysrgb&w=1920"
-        alt=""
+        alt="Elegant restaurant dining room background"
         fill
         priority
         className="object-cover"
       />
 
-      {/* Dark Overlay */}
+      
       <div className="absolute inset-0 bg-black/80" />
 
-      {/* Watermark */}
+      
       <Image
         src="/One-8-commune-logo-transparent.png"
-        alt=""
+        alt="One8 Commune watermark"
         width={1200}
         height={500}
         className="pointer-events-none absolute left-1/2 top-1/2 w-[900px] max-w-none -translate-x-1/2 -translate-y-1/2 opacity-[0.04]"
@@ -38,19 +38,19 @@ export default function Footer() {
 
         <div className="grid items-center gap-6 lg:grid-cols-[190px_1fr_190px]">
 
-          {/* Left Image */}
+          
           <div className="mx-auto hidden lg:block">
             <div className="relative h-[270px] w-[190px] overflow-hidden rounded-t-[999px] border border-amber-500">
               <Image
                 src="https://images.pexels.com/photos/30479386/pexels-photo-30479386.jpeg?auto=compress&cs=tinysrgb&w=700"
-                alt=""
+                alt="Signature gourmet dish at One8 Commune"
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-110"
               />
             </div>
           </div>
 
-          {/* Center */}
+          
           <div className="text-center">
 
             <Image
@@ -98,12 +98,12 @@ export default function Footer() {
 
           </div>
 
-          {/* Right Image */}
+          
           <div className="mx-auto hidden lg:block">
             <div className="relative h-[270px] w-[190px] overflow-hidden rounded-t-[999px] border border-amber-500">
               <Image
                 src="https://images.pexels.com/photos/38381641/pexels-photo-38381641.jpeg?auto=compress&cs=tinysrgb&w=700"
-                alt=""
+                alt="Elegant table setup at One8 Commune"
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-110"
               />

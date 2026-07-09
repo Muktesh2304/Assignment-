@@ -27,7 +27,7 @@ export default function Gallery() {
     );
   };
 
-  // Helper to get wrapped indices for left, center, right images
+  
   const getIndex = (offset) => {
     let index = (currentIndex + offset) % galleryImages.length;
     if (index < 0) {
@@ -39,7 +39,7 @@ export default function Gallery() {
   return (
     <section className="relative overflow-hidden bg-transparent py-24 text-white">
       <div className="relative z-10 mx-auto max-w-7xl px-6">
-        {/* Heading */}
+        
         <div className="mb-20 text-center">
           <p className="mb-4 flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-[0.4em] text-amber-400">
             <span>✦</span>
@@ -51,7 +51,7 @@ export default function Gallery() {
           </h2>
         </div>
 
-        {/* Gallery Slider Container */}
+        
         <div className="relative flex items-center justify-center pb-12">
           
           <button 
@@ -63,7 +63,7 @@ export default function Gallery() {
           </button>
 
           <div className="grid w-full gap-4 md:grid-cols-4 md:gap-6">
-            {/* Left */}
+            
             <div className="relative hidden h-[300px] overflow-hidden rounded-2xl md:col-span-1 md:block md:h-[500px]">
               <Image
                 src={galleryImages[getIndex(-1)]}
@@ -73,7 +73,7 @@ export default function Gallery() {
               />
             </div>
 
-            {/* Center (Staggered Down) */}
+            
             <div className="relative h-[400px] overflow-hidden rounded-2xl md:col-span-2 md:translate-y-12 md:h-[500px]">
               <Image
                 src={galleryImages[getIndex(0)]}
@@ -83,7 +83,7 @@ export default function Gallery() {
               />
             </div>
 
-            {/* Right */}
+            
             <div className="relative hidden h-[300px] overflow-hidden rounded-2xl md:col-span-1 md:block md:h-[500px]">
               <Image
                 src={galleryImages[getIndex(1)]}

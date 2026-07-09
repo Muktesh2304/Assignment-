@@ -6,7 +6,7 @@ export default function ServiceBanner() {
   return (
     <section className="relative h-[50vh] min-h-[380px] w-full overflow-hidden">
 
-      {/* Background Image */}
+      
       <Image
         src="https://images.pexels.com/photos/33948377/pexels-photo-33948377.jpeg"
         alt="Elegant Restaurant Interior"
@@ -15,13 +15,13 @@ export default function ServiceBanner() {
         className="object-cover object-center"
       />
 
-      {/* Dark Overlay */}
+      
       <div className="absolute inset-0 bg-black/55" />
 
-      {/* Decorative Top Line */}
+      
       <div className="absolute left-1/2 top-10 h-1 w-20 -translate-x-1/2 rounded-full bg-amber-500" />
 
-      {/* Content */}
+      
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
 
         <h1 className="font-serif text-5xl text-white md:text-7xl">
@@ -33,7 +33,7 @@ export default function ServiceBanner() {
           <span className="text-amber-400">- fine dining</span>
         </p>
 
-        {/* Breadcrumb */}
+        
         <div className="mt-8 flex items-center gap-2 text-sm">
           <Link
             href="/"
@@ -47,7 +47,7 @@ export default function ServiceBanner() {
 
       </div>
 
-      {/* Bottom Mouse Indicator */}
+      
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
         <div className="flex h-10 w-6 justify-center rounded-full border border-white/60">
           <div className="mt-2 h-2 w-1 rounded-full bg-amber-400 animate-bounce" />
